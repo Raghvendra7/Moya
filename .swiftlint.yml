@@ -1,7 +1,6 @@
 disabled_rules:
   - line_length
   - type_name
-  - valid_docs
 
 opt_in_rules:
   - empty_count
@@ -9,6 +8,9 @@ opt_in_rules:
 
 included:
   - Sources
+  - Tests
+  - Examples
+  - Dangerfile.swift
 
 function_body_length:
   warning: 50

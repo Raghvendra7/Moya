@@ -2,7 +2,7 @@ import Quick
 import Moya
 import Nimble
 
-class MethodSpec: QuickSpec {
+final class MethodSpec: QuickSpec {
     override func spec() {
         describe("supportsMultipart") {
             let expectations: [(Moya.Method, Bool)] = [
@@ -14,7 +14,7 @@ class MethodSpec: QuickSpec {
                 (.head, false),
                 (.patch, true),
                 (.trace, false),
-                (.connect, true),
+                (.connect, true)
             ]
             for (method, expected) in expectations {
                 it("\(method) should \(expected ? "" : "not") support multipart") {

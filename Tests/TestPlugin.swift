@@ -1,5 +1,4 @@
 import enum Result.Result
-import Alamofire
 @testable import Moya
 
 final class TestingPlugin: PluginType {
@@ -35,5 +34,5 @@ final class TestingPlugin: PluginType {
 
         return result
     }
-    
-} 
+
+}
